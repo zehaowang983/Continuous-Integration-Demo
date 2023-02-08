@@ -18,5 +18,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    # Here is how you run terminal commands using GitHub workflows
     - name: output some text to the terminal using echo
       run: echo I just ran the echo command in the terminal
+
+    # Compile and run the hello world program
+    - name: Hello World
+      run: |
+       g++ HelloWorld.cpp -o HelloWorld
+       ./HelloWorld
