@@ -22,7 +22,7 @@ jobs:
     - name: output some text to the terminal using echo
       run: echo I just ran the echo command in the terminal
 
-    # Compile and run the hello world program
+    # Compile and run the Hello World program
     - name: Hello World
       run: |
        g++ HelloWorld.cpp -o HelloWorld
